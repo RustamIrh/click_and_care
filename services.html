@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Services — Click & Care</title>
+  <meta name="description" content="Click & Care — luxury, patient senior tech support in Greater Boston."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-wrap">
+      <div class="brand"><span aria-hidden="true"><svg width="28" height="28" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF4C6"/>
+      <stop offset="1" stop-color="#C2A34A"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="40" height="40" rx="12" fill="url(#g)" />
+  <path d="M17 22c0-3.866 3.134-7 7-7s7 3.134 7 7v1h2c1.657 0 3 1.343 3 3v1c0 4.418-3.582 8-8 8H20c-4.418 0-8-3.582-8-8v-1c0-1.657 1.343-3 3-3h2v-1z" fill="#1C2230"/>
+  <circle cx="24" cy="20.5" r="2" fill="#FFEAA0"/>
+</svg></span><span>Click & Care</span></div>
+      <div class="nav-links">
+        <a href="index.html" >Home</a>
+        <a href="about.html" >About</a>
+        <a href="services.html" style="opacity:1;text-decoration:underline">Services</a>
+        <a href="reviews.html" >Reviews</a>
+        <a href="faq.html" >FAQ</a>
+        <a href="blog.html" >Blog</a>
+        <a href="contact.html" class="btn">Contact</a>
+        <a href="client.html" class="btn gold">Client Login</a>
+      </div>
+      <div class="hamburger" aria-label="Menu"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+  
+<section class="container reveal" style="padding-top:40px">
+  <h3 class="section-title">Services</h3>
+  <div class="grid-4">
+    <div class="card reveal"><h4>Phone Hotline</h4><p class="muted">Quick fixes and guidance.</p><a class="btn" href="contact.html#hotline">Call now</a></div>
+    <div class="card reveal"><h4>In-Home Visits</h4><p class="muted">Setup, troubleshooting, coaching.</p><a class="btn" href="contact.html">Book now</a></div>
+    <div class="card reveal" id="workshops"><h4>Community Workshops</h4><p class="muted">Learning in small groups.</p><a class="btn" href="blog.html">See schedule</a></div>
+    <div class="card reveal"><h4>Password & Security</h4><p class="muted">Manager setup, MFA, scam safety.</p><a class="btn" href="contact.html">Secure my accounts</a></div>
+  </div>
+</section>
+
+<section id="plans" class="pricing reveal">
+  <div class="container">
+    <h3 class="section-title">Pricing & subscriptions</h3>
+    <div class="plan-grid">
+      <article class="plan reveal">
+        <div class="head"><span class="tier">Starter</span><span class="price">$39<span>/mo</span></span></div>
+        <div class="tag">Remote-first safety net</div>
+        <ul><li>Unlimited remote support</li><li>1 in-home visit / year</li><li>Scam & password check</li></ul>
+        <details><summary>More details</summary>
+          <ul><li>Phone/video (Mon–Fri 9–7, Sat 10–4)</li><li>60-min in-home (rollover up to 12 mo)</li><li>Password manager setup + migration</li><li>In-home within 5 business days</li></ul>
+        </details>
+        <div class="actions"><a class="btn gold" href="contact.html">Choose Starter</a></div>
+      </article>
+
+      <article class="plan featured reveal">
+        <div class="head"><span class="tier">Home+</span><span class="price">$59<span>/mo</span></span></div>
+        <div class="tag">Best value for ongoing help</div>
+        <ul><li>3 in-home visits / year</li><li>Wi-Fi tune-up</li><li>Two mini-lessons/quarter</li></ul>
+        <details open><summary>More details</summary>
+          <ul><li>Everything in Starter</li><li>60-min visits (rollovers allowed, cap 4)</li><li>In-home within 3 business days</li><li>1 after-hours slot/mo at standard price</li></ul>
+        </details>
+        <div class="actions"><a class="btn gold" href="contact.html">Choose Home+</a></div>
+      </article>
+
+      <article class="plan reveal">
+        <div class="head"><span class="tier">Concierge</span><span class="price">$89<span>/mo</span></span></div>
+        <div class="tag">High-touch, priority care</div>
+        <ul><li>6 in-home visits / year</li><li>Priority scheduling</li><li>Device concierge</li></ul>
+        <details><summary>More details</summary>
+          <ul><li>Everything in Home+</li><li>Next-business-day remote triage</li><li>In-home within 2 business days</li><li>Setup of 2 devices/yr + up to 6 smart-home devices</li><li>Quarterly Tech Well-Being Report</li></ul>
+        </details>
+        <div class="actions"><a class="btn gold" href="contact.html">Choose Concierge</a></div>
+      </article>
+
+      <article class="plan reveal">
+        <div class="head"><span class="tier">Pay-Per-Visit</span><span class="price">$99<span>/first hr</span></span></div>
+        <div class="tag">Only when you need us</div>
+        <ul><li>In-home troubleshooting/setup</li><li>$45 / each additional 30 min</li><li>10-min follow-up (7 days)</li></ul>
+        <details><summary>More details</summary>
+          <ul><li>No-fix, no-pay</li><li>Credit $39 toward a plan within 7 days</li></ul>
+        </details>
+        <div class="actions"><a class="btn gold" href="contact.html">Book a visit</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <div class="container footer-top reveal">
+      <div><strong>Click & Care</strong><div>Luxury senior tech support • Boston, Cambridge, Somerville, Brookline, Newton</div></div>
+      <div>© <span id="year"></span> Click & Care • Background-checked • Secure payments via Square</div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>

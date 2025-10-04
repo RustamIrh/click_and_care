@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>About — Click & Care</title>
+  <meta name="description" content="Click & Care — luxury, patient senior tech support in Greater Boston."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-wrap">
+      <div class="brand"><span aria-hidden="true"><svg width="28" height="28" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF4C6"/>
+      <stop offset="1" stop-color="#C2A34A"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="40" height="40" rx="12" fill="url(#g)" />
+  <path d="M17 22c0-3.866 3.134-7 7-7s7 3.134 7 7v1h2c1.657 0 3 1.343 3 3v1c0 4.418-3.582 8-8 8H20c-4.418 0-8-3.582-8-8v-1c0-1.657 1.343-3 3-3h2v-1z" fill="#1C2230"/>
+  <circle cx="24" cy="20.5" r="2" fill="#FFEAA0"/>
+</svg></span><span>Click & Care</span></div>
+      <div class="nav-links">
+        <a href="index.html" >Home</a>
+        <a href="about.html" style="opacity:1;text-decoration:underline">About</a>
+        <a href="services.html" >Services</a>
+        <a href="reviews.html" >Reviews</a>
+        <a href="faq.html" >FAQ</a>
+        <a href="blog.html" >Blog</a>
+        <a href="contact.html" class="btn">Contact</a>
+        <a href="client.html" class="btn gold">Client Login</a>
+      </div>
+      <div class="hamburger" aria-label="Menu"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+  
+<section class="container reveal" style="padding-top:40px">
+  <h3 class="section-title">Our mission</h3>
+  <p class="muted">Helping seniors confidently use technology through patient, personalized support — in-home and remote. Luxury here means calm, clear, and convenient, not complicated.</p>
+  <div class="grid-3" style="margin-top:10px">
+    <div class="card reveal"><h4>Hotline</h4><p class="muted">Quick troubleshooting by phone/video.</p></div>
+    <div class="card reveal"><h4>In-home visits</h4><p class="muted">Setup, fixes, and one-on-one teaching.</p></div>
+    <div class="card reveal"><h4>Workshops</h4><p class="muted">Small, friendly sessions at community spaces.</p></div>
+  </div>
+</section>
+
+<section class="container reveal">
+  <h3 class="section-title">Our values</h3>
+  <div class="grid-4">
+    <div class="card reveal"><h4>Patience</h4><p class="muted">We match your pace and explain without jargon.</p></div>
+    <div class="card reveal"><h4>Clarity</h4><p class="muted">Labels on remotes, tidy cables, written notes after each visit.</p></div>
+    <div class="card reveal"><h4>Safety</h4><p class="muted">Password manager, MFA, and scam-prevention coaching.</p></div>
+    <div class="card reveal"><h4>Dignity</h4><p class="muted">Respectful, private, and never condescending.</p></div>
+  </div>
+</section>
+
+<section class="container reveal">
+  <h3 class="section-title">Who we are</h3>
+  <p class="muted">We’re a Boston-based team of background-checked technicians trained specifically to support seniors and their families. Every visit includes a clear plan, tidy finish, and a follow-up summary so everyone stays in the loop.</p>
+  <div class="grid-3">
+    <div class="card reveal"><h4>Vetted experts</h4><p class="muted">Background checks, ID badges, and ongoing training.</p></div>
+    <div class="card reveal"><h4>Professional standards</h4><p class="muted">Insured, on-time, and respectful in your home.</p></div>
+    <div class="card reveal"><h4>Caregiver support</h4><p class="muted">We keep families updated and reduce “tech duty” stress.</p></div>
+  </div>
+</section>
+
+<section class="container reveal">
+  <h3 class="section-title">Where we serve</h3>
+  <p class="muted">Boston, Cambridge, Somerville, Brookline, Newton, Watertown, Arlington, Medford, Quincy, and nearby towns.</p>
+</section>
+
+  <footer>
+    <div class="container footer-top reveal">
+      <div><strong>Click & Care</strong><div>Luxury senior tech support • Boston, Cambridge, Somerville, Brookline, Newton</div></div>
+      <div>© <span id="year"></span> Click & Care • Background-checked • Secure payments via Square</div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>

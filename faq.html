@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>FAQ — Click & Care</title>
+  <meta name="description" content="Click & Care — luxury, patient senior tech support in Greater Boston."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-wrap">
+      <div class="brand"><span aria-hidden="true"><svg width="28" height="28" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF4C6"/>
+      <stop offset="1" stop-color="#C2A34A"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="40" height="40" rx="12" fill="url(#g)" />
+  <path d="M17 22c0-3.866 3.134-7 7-7s7 3.134 7 7v1h2c1.657 0 3 1.343 3 3v1c0 4.418-3.582 8-8 8H20c-4.418 0-8-3.582-8-8v-1c0-1.657 1.343-3 3-3h2v-1z" fill="#1C2230"/>
+  <circle cx="24" cy="20.5" r="2" fill="#FFEAA0"/>
+</svg></span><span>Click & Care</span></div>
+      <div class="nav-links">
+        <a href="index.html" >Home</a>
+        <a href="about.html" >About</a>
+        <a href="services.html" >Services</a>
+        <a href="reviews.html" >Reviews</a>
+        <a href="faq.html" style="opacity:1;text-decoration:underline">FAQ</a>
+        <a href="blog.html" >Blog</a>
+        <a href="contact.html" class="btn">Contact</a>
+        <a href="client.html" class="btn gold">Client Login</a>
+      </div>
+      <div class="hamburger" aria-label="Menu"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+  
+<section class="container reveal" style="padding-top:40px">
+  <h3 class="section-title">FAQ</h3>
+  <div class="faq">
+    <details open class="reveal"><summary>Do you come to my home?</summary><div class="answer">Yes. We serve Boston, Cambridge, Somerville, Brookline, Newton, and nearby towns. We’ll text when we’re on the way.</div></details>
+    <details class="reveal"><summary>What do you help with?</summary><div class="answer">Wi-Fi and internet issues, TV/streaming setup, tablets/phones, password managers, scam prevention, printers, photo back-ups, smart-home devices, and video calling.</div></details>
+    <details class="reveal"><summary>Can you work with retirement communities?</summary><div class="answer">Yes. We coordinate with staff for access and schedule visits that respect community policies.</div></details>
+
+    <details class="reveal"><summary>How fast can you come?</summary><div class="answer">Most appointments are scheduled within 3 business days. Concierge members receive priority windows within 2 business days; same-week remote triage is standard.</div></details>
+    <details class="reveal"><summary>How much does it cost?</summary><div class="answer">Pay-per-visit is $99 for the first hour ($45 per additional 30 min). Plans start at $39/mo and include remote support and in-home visits. See <a href="services.html#plans">Plans</a>.</div></details>
+    <details class="reveal"><summary>Do visits roll over?</summary><div class="answer">In Starter, 1 in-home visit rolls over up to 12 months. In Home+, rollovers are allowed up to a cap of 4. Concierge includes 6 visits per year.</div></details>
+
+    <details class="reveal"><summary>Is it safe to share passwords?</summary><div class="answer">Yes. We set up a password manager so credentials stay in your encrypted vault. We never keep a copy outside your vault.</div></details>
+    <details class="reveal"><summary>Do you do background checks?</summary><div class="answer">Every technician is background-checked and insured. We carry photo ID to every visit.</div></details>
+    <details class="reveal"><summary>Do you handle scams or identity theft?</summary><div class="answer">We remove malware, reset accounts, enable MFA, and help report fraud to banks and platforms. If money was lost, we provide a step-by-step playbook.</div></details>
+
+    <details class="reveal"><summary>Can you fix printers?</summary><div class="answer">Yes — drivers, wireless setup, and test pages. If the printer is the problem, we’ll recommend a reliable replacement.</div></details>
+    <details class="reveal"><summary>Will you label remotes and cords?</summary><div class="answer">Absolutely. We label HDMI inputs, remotes, and tidy cables so everything is obvious the next time.</div></details>
+    <details class="reveal"><summary>Do you set up new phones or tablets?</summary><div class="answer">Yes. We transfer data, set up backups, contacts, WhatsApp/FaceTime/Zoom, and teach the basics.</div></details>
+
+    <details class="reveal"><summary>What if you can’t fix it?</summary><div class="answer">For pay-per-visit jobs, there’s no charge if we can’t solve the issue. For members, we’ll escalate to a senior specialist and keep working until it’s resolved.</div></details>
+    <details class="reveal"><summary>Do you offer a guarantee?</summary><div class="answer">Yes. All plans include a 30-day Happiness Promise: if you’re not satisfied, we’ll make it right or refund your last month.</div></details>
+    <details class="reveal"><summary>How do I cancel?</summary><div class="answer">Cancel anytime from your email receipt or by contacting support. Your plan remains active until the end of the billing period.</div></details>
+    <details class="reveal"><summary>Is there a referral program?</summary><div class="answer">Yes. Give $20, Get $20: we credit both accounts when a new family signs up using your referral.</div></details>
+  </div>
+</section>
+
+  <footer>
+    <div class="container footer-top reveal">
+      <div><strong>Click & Care</strong><div>Luxury senior tech support • Boston, Cambridge, Somerville, Brookline, Newton</div></div>
+      <div>© <span id="year"></span> Click & Care • Background-checked • Secure payments via Square</div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
