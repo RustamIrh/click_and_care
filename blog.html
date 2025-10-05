@@ -13,23 +13,28 @@
 <body>
   <nav class="nav">
     <div class="container nav-wrap">
-      <div class="brand"><span aria-hidden="true"><svg width="28" height="28" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#FFF4C6"/>
-      <stop offset="1" stop-color="#C2A34A"/>
-    </linearGradient>
-  </defs>
-  <rect x="4" y="4" width="40" height="40" rx="12" fill="url(#g)" />
-  <path d="M17 22c0-3.866 3.134-7 7-7s7 3.134 7 7v1h2c1.657 0 3 1.343 3 3v1c0 4.418-3.582 8-8 8H20c-4.418 0-8-3.582-8-8v-1c0-1.657 1.343-3 3-3h2v-1z" fill="#1C2230"/>
-  <circle cx="24" cy="20.5" r="2" fill="#FFEAA0"/>
-</svg></span><span>Click & Care</span></div>
+      <div class="brand">
+        <span aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#FFF4C6"/>
+                <stop offset="1" stop-color="#C2A34A"/>
+              </linearGradient>
+            </defs>
+            <rect x="4" y="4" width="40" height="40" rx="12" fill="url(#g)" />
+            <path d="M17 22c0-3.866 3.134-7 7-7s7 3.134 7 7v1h2c1.657 0 3 1.343 3 3v1c0 4.418-3.582 8-8 8H20c-4.418 0-8-3.582-8-8v-1c0-1.657 1.343-3 3-3h2v-1z" fill="#1C2230"/>
+            <circle cx="24" cy="20.5" r="2" fill="#FFEAA0"/>
+          </svg>
+        </span>
+        <span>Click & Care</span>
+      </div>
       <div class="nav-links">
-        <a href="index.html" >Home</a>
-        <a href="about.html" >About</a>
-        <a href="services.html" >Services</a>
-        <a href="reviews.html" >Reviews</a>
-        <a href="faq.html" >FAQ</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="faq.html">FAQ</a>
         <a href="blog.html" style="opacity:1;text-decoration:underline">Blog</a>
         <a href="contact.html" class="btn">Contact</a>
         <a href="client.html" class="btn gold">Client Login</a>
@@ -37,13 +42,42 @@
       <div class="hamburger" aria-label="Menu"><span></span><span></span><span></span></div>
     </div>
   </nav>
-  <section class='container reveal' style='padding-top:40px'><h3 class='section-title'>Updates & Tips</h3><p class='muted'>Articles and workshop dates will appear here.</p></section>
+
+  <section class='container reveal' style='padding-top:40px'>
+    <h3 class='section-title'>Updates & Tips</h3>
+    <p class='muted'>Articles and workshop dates will appear here.</p>
+  </section>
+
+  <!-- Twitter Feed Section -->
+  <section class="container reveal" style="margin-top:40px;">
+    <h3 class="section-title" style="display:flex;align-items:center;gap:10px;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter Logo" style="width:28px;height:28px;">
+      Follow Us on Twitter
+    </h3>
+    <p class="muted">@clickncarehelp — Our latest updates and tips from the team.</p>
+    <div style="margin-top:20px;">
+      <!-- Embedded Twitter Timeline -->
+      <a class="twitter-timeline"
+         data-width="500"
+         data-height="600"
+         data-theme="light"
+         href="https://twitter.com/clickncarehelp?ref_src=twsrc%5Etfw">
+         Tweets by @clickncarehelp
+      </a>
+    </div>
+  </section>
+
   <footer>
     <div class="container footer-top reveal">
-      <div><strong>Click & Care</strong><div>Luxury senior tech support • Boston, Cambridge, Somerville, Brookline, Newton</div></div>
+      <div>
+        <strong>Click & Care</strong>
+        <div>Luxury senior tech support • Boston, Cambridge, Somerville, Brookline, Newton</div>
+      </div>
       <div>© <span id="year"></span> Click & Care • Background-checked • Secure payments via Square</div>
     </div>
   </footer>
+
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   <script src="app.js"></script>
   <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
 </body>
