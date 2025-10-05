@@ -131,3 +131,16 @@ summary{transition:background-color .2s ease}
   .reveal,.reveal.is-visible{opacity:1; transform:none; transition:none}
   .btn,.card{transition:none}
 }
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0b0c10;
+  margin-bottom: 15px;
+}
+
+.container p.muted {
+  color: #5c6270;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  max-width: 850px;
+}
