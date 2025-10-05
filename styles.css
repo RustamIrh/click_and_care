@@ -165,8 +165,81 @@ label{display:block;font-size:.9rem;margin:.25rem 0 .25rem;color:#394150}
 @media(max-width:680px){.form-grid{grid-template-columns:1fr}.form-grid .full{grid-column:auto}}
 
 /* Footer */
-footer{padding:38px 0;border-top:1px solid var(--line);color:#475569}
-.footer-top{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+footer
+{
+  padding:38px 0;
+  background-color: #f8f9fb;
+  border-top:1px solid var(--line);
+  color:#475569;
+  font-size: 0.95rem;
+}
+
+
+footer a {
+  color: #475569;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #ffd700; /* gold hover effect */
+}
+.footer-top div {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+.footer-top strong {
+  font-size: 1.05rem;
+  color: #1e293b;
+}
+.footer-top
+{
+  display:flex;
+  justify-content:space-between;
+  gap:14px;
+  flex-wrap:wrap
+}
+
+
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.social-icons img {
+  width: 22px;
+  height: 22px;
+  filter: grayscale(100%);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.15);
+  filter: grayscale(0%) brightness(1.1);
+}
+
+/* Hover lift for phone number and icons */
+.phone-link,
+.social-icons img {
+  transition: transform 0.25s ease, color 0.25s ease;
+  display: inline-block;
+}
+
+/* Move up slightly when hovered */
+.phone-link:hover,
+.social-icons img:hover {
+  transform: translateY(-3px);
+}
+
+/* Gold color for phone number hover */
+.phone-link:hover {
+  color: #c2a34a; /* softer gold look */
+}
+/* Hover effect for email */
+.email-link:hover {
+  transform: translateY(-3px);
+  color: #c2a34a;
+}
 
 /* Mobile nav */
 .hamburger{display:none;flex-direction:column;gap:4px;cursor:pointer}
@@ -209,3 +282,5 @@ summary{transition:background-color .2s ease}
   font-size: 1.05rem;
   max-width: 850px;
 }
+
+
