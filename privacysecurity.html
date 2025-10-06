@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Privacy & Security - Senior Tech Support</title>
+</head>
+<body>
+    <button class="back-button" onclick="goBack()">← Back to App</button>
+    
+    <div class="privacy-page-wrapper">
+        <div class="container">
+            <div class="header">
+                <h1>Privacy & Security</h1>
+                <p>Keeping your information safe and secure</p>
+            </div>
+
+            <div class="nav-tabs">
+                <button class="tab-button active" onclick="showTab('privacy')">Privacy Policy</button>
+                <button class="tab-button" onclick="showTab('security')">Security Tips</button>
+                <button class="tab-button" onclick="showTab('settings')">Your Settings</button>
+            </div>
+
+            <div class="content">
+                <div id="privacy" class="tab-content active">
+                    <div class="card">
+                        <h3> How We Protect Your Privacy</h3>
+                        <p><strong>We respect your privacy and are committed to protecting your personal information.</strong> This page explains in simple terms how we handle your data.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3> What Information We Collect</h3>
+                        <div class="card">
+                            <h4>Information you give us:</h4>
+                            <p>• Your name and contact information<br>
+                            • Questions you ask for tech support<br>
+                            • Device information to help solve problems<br>
+                            • Feedback about our service</p>
+                        </div>
+                        
+                        
+                        <div id="technical-info" class="expandable-content">
+                            <p><strong>Automatic Information:</strong> We may collect device type, browser version, and general location (city/state) to provide better support. We never access your personal files or passwords.</p>
+                        </div>
+                    </div>
+                    <button class="toggle-button" onclick="toggleContent('technical-info')">
+                            Show Technical Details
+                        </button>
+
+                    <div class="tab-content active">
+                      <div class="card">
+                        <h3> How We Use Your Information</h3>
+                        <p><strong>We only use your information to:</strong></p>
+                        <p> Provide tech support and answer your questions<br>
+                            Improve our service to help you better<br>
+                            Send important updates about our service<br>
+                            Contact you if there are security concerns</p>
+                        </div>    
+                        
+                        <div class="card">
+                            <h4 >We NEVER:</h4>
+                            <p> Sell your information to other companies<br>
+                            Share your personal details without permission<br>
+                            Use your information for advertising<br>
+                            Access your device without your consent</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Your Rights</h3>
+                        <p><strong>You have the right to:</strong></p>
+                        <p>• See what information we have about you<br>
+                        • Ask us to correct wrong information<br>
+                        • Request we delete your information<br>
+                        • Stop receiving our communications anytime</p>
+                    </div>
+                </div>
+
+                <div id="security" class="tab-content">
+                    <div class="card">
+                        <h3>Staying Safe Online</h3>
+                        <p><strong>Here are simple ways to protect yourself online:</strong></p>
+                    </div>
+
+                    <div class="security-tips">
+                        <div class="card">
+                            <div class="tip-icon">🔑</div>
+                            <div>
+                                <h4>Strong Passwords</h4>
+                                <p>Use passwords with at least 8 characters, including numbers and symbols. Don't use the same password for multiple accounts.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="tip-icon">📧</div>
+                            <div>
+                                <h4>Email Safety</h4>
+                                <p>Be careful with emails asking for personal information. When in doubt, call the company directly using a number you trust.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="tip-icon">📱</div>
+                            <div>
+                                <h4>Phone Scams</h4>
+                                <p>Never give personal information to unexpected callers. Legitimate companies won't ask for passwords or social security numbers over the phone.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="tip-icon">🔄</div>
+                            <div>
+                                <h4>Software Updates</h4>
+                                <p>Keep your devices updated. Enable automatic updates when possible - they often include important security fixes.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="tip-icon">🌐</div>
+                            <div>
+                                <h4>Safe Browsing</h4>
+                                <p>Look for "https://" in website addresses when entering personal information. The "s" means the site is secure.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h4>⚠️ Warning Signs of Scams</h4>
+                        <p>• Urgent messages demanding immediate action<br>
+                        • Requests for passwords, Social Security numbers, or banking information<br>
+                        • Offers that seem "too good to be true"<br>
+                        • Pressure to act quickly or secretly</p>
+                    </div>
+                </div>
+
+                <div id="settings" class="tab-content">
+                    <div class="card">
+                        <h3>⚙️ Your Privacy Settings</h3>
+                        <p><strong>Control how we use your information:</strong></p>
+                    </div>
+
+                    <div class="card">
+                        <h3>📧 Communication Preferences</h3>
+                        <div class="highlight-box">
+                            <h4>Email Notifications</h4>
+                            <label>
+                                <input type="checkbox" id="service-updates" checked> 
+                                Service updates and important notices
+                            </label><br>
+                            <label>
+                                <input type="checkbox" id="tips-newsletter"> 
+                                Monthly tech tips newsletter
+                            </label><br>
+                            <label>
+                                <input type="checkbox" id="support-followup" checked> 
+                                Follow-up messages after support sessions
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>📱 Accessibility Options</h3>
+                        <button class="toggle-button" onclick="toggleLargeText()">Toggle Large Text</button>
+                        <button class="toggle-button" onclick="toggleHighContrast()">Toggle High Contrast</button>
+                    </div>
+
+                    <div class="card">
+                        <h3>Delete Your Account</h3>
+                        <p>If you no longer want to use our service, you can delete your account and all associated data.</p>
+                        <button class="contact-button" style="background: #dc3545;" onclick="requestAccountDeletion()">Request Account Deletion</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+              
+    </div>
+    
+    <script>
+        // Tab functionality
+        function showTab(tabName) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+            
+            // Remove active class from all buttons
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(button => button.classList.remove('active'));
+            
+            // Show selected tab and activate button
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Toggle expandable content
+        function toggleContent(contentId) {
+            const content = document.getElementById(contentId);
+            const button = event.target;
+            
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                button.textContent = 'Show Technical Details';
+            } else {
+                content.style.display = 'block';
+                button.textContent = 'Hide Technical Details';
+            }
+        }
+
+        // Accessibility functions
+        function toggleLargeText() {
+            document.body.classList.toggle('large-text');
+            localStorage.setItem('largeText', document.body.classList.contains('large-text'));
+        }
+
+        function toggleHighContrast() {
+            document.body.classList.toggle('high-contrast');
+            localStorage.setItem('highContrast', document.body.classList.contains('high-contrast'));
+        }
+
+        // Contact functions (Placeholder functions included in original script)
+        function contactSupport() {
+            window.open('tel:+1-800-SUPPORT');
+        }
+
+        function emailSupport() {
+            window.open('mailto:support@yourtechsupport.com?subject=Privacy and Security Question');
+        }
+
+        // Settings functions (Placeholder functions included in original script)
+        function changePassword() {
+            alert('You will be redirected to the password change page.');
+        }
+
+        function reviewSessions() {
+            alert('Showing your recent login history...');
+        }
+
+        function requestAccountDeletion() {
+            if (confirm('Are you sure you want to delete your account? This cannot be undone.')) {
+                alert('Your account deletion request has been submitted. You will receive a confirmation email within 24 hours.');
+            }
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+
+        // Save notification preferences
+        document.addEventListener('change', function(e) {
+            if (e.target.type === 'checkbox') {
+                localStorage.setItem(e.target.id, e.target.checked);
+            }
+        });
+
+        // Load saved preferences on page load
+        window.addEventListener('load', function() {
+            // Load accessibility preferences
+            if (localStorage.getItem('largeText') === 'true') {
+                document.body.classList.add('large-text');
+            }
+            if (localStorage.getItem('highContrast') === 'true') {
+                document.body.classList.add('high-contrast');
+            }
+
+            // Load notification preferences
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+                const saved = localStorage.getItem(checkbox.id);
+                if (saved !== null) {
+                    checkbox.checked = saved === 'true';
+                }
+            });
+
+            // Update year for the footer
+            document.getElementById('year').textContent = new Date().getFullYear();
+            
+            // Note: The original script included a 'last-login' update, 
+            // but the HTML doesn't have an element with id="last-login",
+            // so I've commented that part out or it will cause an error.
+            // document.getElementById('last-login').textContent = new Date().toLocaleString();
+        });
+    </script>
+</body>
+</html>
