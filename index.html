@@ -55,16 +55,44 @@
         <a href="services.html#workshops">Workshops</a> &middot; <a href="contact.html#hotline">Hotline Help</a>
       </div>
     </div>
-    <div class="card hero-card reveal" data-anim="right">
-      <h3 class="section-title" style="margin:0 0 6px">A calmer home in three steps</h3>
-      <ol class="muted process-steps">
-        <li>Tell us your issue.</li>
-        <li>We schedule the best window.</li>
-        <li>We fix, tidy, and follow up — like it never broke.</li>
-      </ol>
-      <div style="height:8px"></div>
-      <a class="btn gold" style="width:100%" href="contact.html">Contact Us Today</a>
-    </div>
+        <div class="card hero-card reveal" data-anim="right" style="position: relative; z-index: 1;">
+  <h3 class="section-title" style="margin:0 0 6px;">A calmer home in three steps</h3>
+  <ol class="muted process-steps">
+    <li>Tell us your issue.</li>
+    <li>We schedule the best window.</li>
+    <li>We fix, tidy, and follow up — like it never broke.</li>
+  </ol>
+
+  <div style="height:8px;"></div>
+
+  <!-- Clickable Contact Button -->
+  <a 
+    href="contact.html"
+    class="btn gold contact-btn"
+    style="
+      width:100%;
+      display:inline-block;
+      text-align:center;
+      cursor:pointer;
+      text-decoration:none;
+      transition:all 0.3s ease;
+      position:relative;
+      z-index:10;
+    "
+  >
+    Contact Us Today
+  </a>
+</div>
+
+<style>
+  .contact-btn:hover {
+    background-color: #d4af37;
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+</style>
+
+
   </div>
 </header>
 
