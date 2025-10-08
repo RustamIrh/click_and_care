@@ -485,3 +485,105 @@ summary{transition:background-color .2s ease}
 }
 
 
+
+       /* review submit feature css style start*/
+        .review-container {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .review-form-title {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        button {
+            background: #CBB262;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button:hover {
+            background: #3f7e1b;
+        }
+
+        .reviews-section {
+            margin-top: 40px;
+        }
+
+        .reviews-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #CBB262;
+        }
+
+        .review-card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 4px solid #CBB262;
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .review-name {
+            font-weight: bold;
+            color: #333;
+            font-size: 18px;
+        }
+
+        .review-rating {
+            color: #ff9800;
+            font-size: 20px;
+        }
+
+        .review-text {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .no-reviews {
+            text-align: center;
+            color: #999;
+            padding: 40px;
+            font-style: italic;
+        }
+/* review submit feature css style start*/
