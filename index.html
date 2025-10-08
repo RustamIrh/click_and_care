@@ -55,16 +55,43 @@
         <a href="services.html#workshops">Workshops</a> &middot; <a href="contact.html#hotline">Hotline Help</a>
       </div>
     </div>
-    <div class="card hero-card reveal" data-anim="right">
-      <h3 class="section-title" style="margin:0 0 6px">A calmer home in three steps</h3>
-      <ol class="muted process-steps">
-        <li>Tell us your issue.</li>
-        <li>We schedule the best window.</li>
-        <li>We fix, tidy, and follow up — like it never broke.</li>
-      </ol>
-      <div style="height:8px"></div>
-      <a class="btn gold" style="width:100%" href="services.html">See Plans & Pricing</a>
-    </div>
+        <div class="card hero-card reveal" data-anim="right" style="position: relative; z-index: 1;">
+  <h3 class="section-title" style="margin:0 0 6px;">A calmer home in three steps</h3>
+  <ol class="muted process-steps">
+    <li>Tell us your issue.</li>
+    <li>We schedule the best window.</li>
+    <li>We fix, tidy, and follow up — like it never broke.</li>
+  </ol>
+
+  <div style="height:8px;"></div>
+
+  <!-- Clickable Contact Button -->
+  <a 
+    href="contact.html"
+    class="btn gold contact-btn"
+    style="
+      width:100%;
+      display:inline-block;
+      text-align:center;
+      cursor:pointer;
+      text-decoration:none;
+      transition:all 0.3s ease;
+      position:relative;
+      z-index:10;
+    "
+  >
+    Contact Us Today
+  </a>
+</div>
+
+<style>
+  .contact-btn:hover {
+    background-color: #d4af37;
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+</style>
+
   </div>
 </header>
 
@@ -89,58 +116,58 @@
   </div>
 </section>
 
-<section id="why-us" class="container reveal"> 
-  <h3 class="section-title">The Click & Care Difference</h3> 
-  <div class="trust"> 
-    <div class="badge">
-      <div class="icon" aria-hidden="true"></div>
-      <div>
-        <strong>Background-checked</strong>
-        <div class="muted">Insured & ID verified</div>
-      </div>
-    </div> 
-    <div class="badge">
-      <div class="icon" aria-hidden="true"></div>
-      <div>
-        <strong>No-fix, No-pay</strong>
-        <div class="muted">For single-issue visits</div>
-      </div>
-    </div> 
-    <div class="badge">
-      <div class="icon" aria-hidden="true"></div>
-      <div>
-        <strong>Privacy-first</strong>
-        <div class="muted">Passwords stay in your vault</div>
-      </div>
-    </div> 
-    <div class="badge">
-      <div class="icon" aria-hidden="true"></div>
-      <div>
-        <strong>Boston-based</strong>
-        <div class="muted">Same-week scheduling</div>
-      </div>
-    </div> 
-  </div> 
-</section>
+<section id="why-us" class="container reveal">
+  <h3 class="section-title">The Click & Care Difference</h3>
 
+  <div class="grid-3">
+    <!-- Trust & Safety -->
+    <div class="card service-card">
+      <div class="icon"></div>
+      <h4>Trust & Safety</h4>
+      <ul class="muted">
+        <li><strong>Click & Care:</strong> ✔️ Background-checked, insured & ID verified</li>
+        <li><strong>Competitors:</strong> ⚠️ Often not verified or insured</li>
+      </ul>
+    </div>
 
-<section class="container reveal">
-  <div class="stat-grid">
-    <div class="card stat">
-      <h2 style="margin:.1rem 0"><span>95%+</span></h2>
-      <div class="muted">Issues fixed in one visit</div>
+    <!-- Guarantee & Transparency -->
+    <div class="card service-card">
+      <div class="icon"></div>
+      <h4>Guarantee & Transparency</h4>
+      <ul class="muted">
+        <li><strong>Click & Care:</strong> ✔️ No-fix, no-pay policy for single-issue visits</li>
+        <li><strong>Competitors:</strong> ❌ You pay regardless of outcome</li>
+      </ul>
     </div>
-    <div class="card stat">
-      <h2 style="margin:.1rem 0"><span>4.9★</span></h2>
-      <div class="muted">Average family rating</div>
-    </div>
-    <div class="card stat">
-      <h2 style="margin:.1rem 0"><span>72 hrs</span></h2>
-      <div class="muted">Avg. time to appointment</div>
+
+    <!-- Local & Privacy-Focused -->
+    <div class="card service-card">
+      <div class="icon"></div>
+      <h4>Local & Privacy-Focused</h4>
+      <ul class="muted">
+        <li><strong>Click & Care:</strong> ✔️ Boston-based with same-week scheduling</li>
+        <li><strong>Click & Care:</strong> ✔️ Passwords stay private in your vault</li>
+        <li><strong>Competitors:</strong> ⚠️ Outsourced & may require full access</li>
+      </ul>
     </div>
   </div>
-  <div class="notice muted" style="margin-top:10px">30-day Happiness Promise for plans &bull; No-fix, no-pay for single issues &bull; Clear, itemized summaries after every visit</div>
 </section>
+
+
+
+<section class="container reveal" id="promise">
+  <h3 class="section-title">Our Service Promise</h3>
+  <p class="muted" style="text-align:center; max-width:800px; margin:0 auto 1rem;">
+    We stand behind every visit with transparency, trust, and guaranteed satisfaction.
+  </p>
+
+  <div class="notice muted" style="margin-top:10px; text-align:center; font-size:1rem;">
+    <strong>✔️ 30-Day Happiness Promise</strong> for ongoing plans &bull; 
+    <strong>✔️ No-Fix, No-Pay</strong> for single-issue visits &bull; 
+    <strong>✔️ Clear, Itemized Summaries</strong> after every visit
+  </div>
+</section>
+
 
 <section id="free-guide" class="container reveal" data-anim="zoom">
   <div class="card cta-banner" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
