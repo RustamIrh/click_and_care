@@ -43,31 +43,99 @@
     </div>
   </nav>
 
-  <section class='container reveal' style='padding-top:40px'>
-    <h3 class='section-title'>Updates & Tips</h3>
-    <p class='muted'>Articles and workshop dates will appear here.</p>
-  </section>
+<section class="container reveal" style="padding-top:40px;">
+  <div style="display:grid; grid-template-columns: 2fr 1fr; gap: 40px; align-items:start;">
 
-  <!-- Twitter Feed Section -->
-  <section class="container reveal" style="margin-top:40px;">
-    <h3 class="section-title" style="display:flex;align-items:center;gap:10px;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter Logo" style="width:28px;height:28px;">
-      Follow Us on Twitter
-    </h3>
-    <p class="muted">@clickncarehelp — Our latest updates and tips from the team.</p>
-    <div style="margin-top:20px;">
-      <!-- Embedded Twitter Timeline -->
-      <a class="twitter-timeline"
-         data-width="500"
-         data-height="600"
-         data-theme="light"
-         href="https://twitter.com/clickncarehelp?ref_src=twsrc%5Etfw">
-         Tweets by @clickncarehelp
-      </a>
-    </div>
-  </section>
+   <!-- LEFT COLUMN: Updates & Articles -->
+<div>
+  <h3 class="section-title">Updates & Tips</h3>
+  <p class="muted">Articles, workshops, and helpful senior tech guides will appear here.</p>
 
+  <!-- Clickable Card 1 -->
+  <a href="https://www.experian.com/blogs/ask-experian/the-latest-scams-you-need-to-aware-of/" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     style="text-decoration:none; color:inherit;">
+    <article class="card service-card hover:shadow-lg transition-shadow duration-300" style="margin-top:20px; cursor:pointer;">
+      <h4>🧠 How to Stay Scam-Safe in 2025</h4>
+      <p class="muted">Learn simple ways to protect yourself from phone and email scams.</p>
+      <p class="muted" style="font-weight:bold;">Read More →</p>
+    </article>
+  </a>
+
+  <!-- Clickable Card 2 -->
+  <a href="https://www.wired.com/story/how-to-make-your-wifi-better-faster/" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     style="text-decoration:none; color:inherit;">
+    <article class="card service-card hover:shadow-lg transition-shadow duration-300" style="margin-top:20px; cursor:pointer;">
+      <h4>💡 Wi-Fi Fixes You Can Do Yourself</h4>
+      <p class="muted">Try these quick tips before scheduling a visit with Click & Care.</p>
+      <p class="muted" style="font-weight:bold;">Read More →</p>
+    </article>
+  </a>
+</div>
+
+
+
+    <!-- RIGHT COLUMN: Social Media -->
+    <aside>
+      <h3 class="section-title" style="display:flex;align-items:center;gap:10px;">
+        <a href="https://x.com/clickncarehelp" target="_blank" aria-label="Follow Click & Care on Twitter">
+          <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" 
+            alt="Twitter Logo" 
+            style="width:42px;height:42px;">
+        </a>
+        <span>Follow Us on Twitter</span>
+      </h3>
+      <p class="muted">@clickncarehelp — Our latest updates and tips from the team.</p>
+
+            <!-- Embedded Twitter Timeline -->
+      <div style="margin-top:20px;">
+        <a class="twitter-timeline"
+          data-width="100%"
+          data-height="500"
+          data-theme="light"
+          href="https://twitter.com/clickncarehelp?ref_src=twsrc%5Etfw">
+          Tweets by @clickncarehelp
+        </a>
+      </div>
+
+<!-- Load Twitter Widget Script -->
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+      <!-- Instagram Section -->
+      <div style="margin-top:40px;">
+        <h3 class="section-title" style="display:flex;align-items:center;gap:10px;">
+          <a href="https://www.instagram.com/clickncareservice/" target="_blank" aria-label="Follow Click & Care on Instagram">
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
+              alt="Instagram Logo" 
+              style="width:42px;height:42px;">
+          </a>
+          <span>Follow Us on Instagram</span>
+        </h3>
+        <p class="muted">@clickncareservice — See our latest workshops and success stories.</p>
+        <div style="margin-top:15px;">
+          <!-- Optionally Embed Instagram Post -->
+          <blockquote 
+            class="instagram-media" 
+            data-instgrm-permalink="https://www.instagram.com/clickncareservice/" 
+            data-instgrm-version="14"
+            style="background:#fff; border:0; margin:0 auto; width:100%; max-width:350px;">
+          </blockquote>
+        </div>
+      </div>
+    </aside>
+  </div>
 </section>
+
+<!-- Load Twitter & Instagram Embeds -->
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="//www.instagram.com/embed.js"></script>
+
 
 <footer>
   <div class="container footer-top reveal">
